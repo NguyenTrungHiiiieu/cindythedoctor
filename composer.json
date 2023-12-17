@@ -1,0 +1,21 @@
+{
+    "name": "nguye/vendor",
+    "description": "Your project description",
+    "type": "project",
+    "require": {
+        "tecnickcom/tcpdf": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp vendor/tecnickcom/tcpdf/examples/tcpdf_include.php tcpdf_include.php"
+        ],
+        "post-update-cmd": [
+            "cp vendor/tecnickcom/tcpdf/examples/tcpdf_include.php tcpdf_include.php"
+        ]
+    }
+}
